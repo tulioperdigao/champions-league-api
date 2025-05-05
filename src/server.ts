@@ -1,4 +1,3 @@
-import express, {json, Request, Response} from 'express';
 import dotenv from 'dotenv';
 import createApp from './app';
 
