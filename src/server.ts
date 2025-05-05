@@ -1,20 +1,11 @@
 import express, {json, Request, Response} from 'express';
 import dotenv from 'dotenv';
+import createApp from './app';
 
 dotenv.config();
 
-const app = express();
+const app = createApp();
 const port = process.env.PORT;
-
-app.use(json())
-
-app.get("/", (req: Request, res:Response) => {
-    res.status(200).json(
-        {
-            'player': 'Lionel Messi'
-        }
-    );
-})
 
 app.listen(port, () => {
     console.log(`✅ Server running at port http://localhost:${port}/`);
