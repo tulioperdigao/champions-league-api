@@ -1,0 +1,28 @@
+{
+  "name": "champions-league-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx src/server.ts",
+    "start:watch": "tsx watch src/server.ts",
+    "start:dist": "npm rub dist && node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "Tulio Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tulioperdigao/champions-league-api/issues"
+  },
+  "homepage": "https://github.com/tulioperdigao/champions-league-api#readme",
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
